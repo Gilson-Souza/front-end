@@ -44,7 +44,7 @@ O projeto conta com um
 * dois botões para criptografar e descriptografar
 * uma imagem de um investigador com lupa
 * um texto no rodape
-* dois botões extra com links para o meu linkedin e paro meu github
+* dois botões extra com links para o meu linkedin pessoal e para o repositorio online no gitHub
 * um botão para copiar que aparece apenas quando tiver texto digitado na tela   
 
 Elementos da pagina posicionados com flex-box.
