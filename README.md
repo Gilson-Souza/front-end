@@ -49,9 +49,9 @@ O projeto conta com um
 
 Elementos da pagina posicionados com flex-box.
 
-Codigo de java scrpit em dois formatos de logica, utilizando (for) criando um outro texto ao mesmo tempo que iterava e verificava os elementos do texto digitado e fazendo comparações para adicionar ao novo texto ou o elemento do texto digitado ou em caso de ser um dos elementos chave da criptografia eu adicionei ao texto o elemento de substituição no caso do [e] seria o [enter].
+Codigo de javaScript em dois formatos de logica, utilizando (for) criando um novo texto ao mesmo tempo que iterava e verificava os elementos do texto digitado, fazendo comparações para adicionar ao novo texto o elemento do texto digitado ou em caso de ser um dos elementos chave da criptografia eu adicionei ao texto o elemento de substituição no caso do [e] seria o [enter].
 
-E o segundo modelo de logica utilizado, foi com a function replace que realiza a substituição de forma mais simpes e automatica identificando no texto os elementos chave e substituindo pelos elementos de substituição e entregando esse resultado em uma nova string.
+E o segundo modelo de logica utilizado, foi com a function replace que realiza a substituição de forma mais simples e automatica identificando no texto os elementos chave e substituindo pelos elementos de substituição e entregando esse resultado em uma nova string.
 
 Para os requisitos foi utlizado a estratégia de mudar o texto digitado para letras miniscula por meio de function, e usar uma outra function para retirar os acentos do texto digitado assim não precisando se preocupar com o conteudo digitado, ele sera tratado e enviado um texto que atende aos requisitos.
 
