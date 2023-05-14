@@ -1,0 +1,272 @@
+:root {
+    --cor-principal: #E5E5E5;
+    --cor-buttom-principal: #0A3871;
+    --cor-buttom-secundario: #D8DFE8;
+    --cor-activate: #3e778e;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    background: var(--cor-principal);
+}
+
+.logo__alura{
+    display: flex;
+    justify-content: flex-start;
+    height: 5vh;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+
+}
+
+.texto__decodificador{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+   
+    
+}
+
+.caixa__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+
+}
+
+.texto textarea{
+    border-radius: 24px;
+    border: none;
+    background: var(--cor-principal);
+    padding: 20px;
+    width: 550px;
+    height: 25vh;
+    
+ }
+
+ 
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+}  
+
+.botoes{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 24px;
+    gap: 8px;
+}
+
+.botao-principal{
+    background: var(--cor-buttom-principal);
+    border-radius: 24px;
+    color: var(--cor-buttom-secundario);
+    width: 318px;
+    height: 67px;
+    transition: background-color 0.3s ease;
+   
+}
+
+.botao-principal:hover {
+    background-color: var(--cor-activate);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+.botao-principal:active {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) inset;
+    background-color: var(--cor-activate);
+  }
+
+.botao-secundario{
+    background: var(--cor-buttom-secundario);
+    border-radius: 24px;
+    color: var(--cor-buttom-principal);
+    width: 318px;
+    height: 67px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-activate);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+.botao-secundario:active {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-activate);
+  }
+
+.imagem__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    width: 300px;
+    height: 50vh;
+    background-color: white;
+    border-radius: 24px;
+}
+
+.imagem__texto img{
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--cor-buttom-principal);
+    color: var(--cor-buttom-secundario);
+    height: 11vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+ 
+}
+.linkedin-icon {
+    color: var(--cor-buttom-secundario); /* define a cor do ícone */
+    font-size: 32px; /* define o tamanho do ícone */
+    transition: background-color 0.3s ease;
+  }
+.linkedin-icon:hover {
+    background-color: var(--cor-activate);
+  }
+  
+.linkedin-icon:active {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-activate);
+  }
+
+.github-icon {
+    color: var(--cor-buttom-secundario); /* define a cor do ícone */
+    font-size: 32px; /* define o tamanho do ícone */
+    transition: background-color 0.3s ease;
+}
+.github-icon:hover {
+    background-color: var(--cor-activate);
+  }
+  
+.github-icon:active {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-activate);
+  }
+
+.btn-copy{
+    display: none;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-copy:hover {
+    background-color: var(--cor-activate);
+  }
+  
+.gbtn-copy:active {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--cor-activate);
+  }
+
+.fa-clipboard{
+    color: var(--cor-buttom-principal); /* define a cor do ícone */
+    font-size: 32px; /* define o tamanho do ícone */
+}
+
+.copia_git{
+    display: flex;
+}
+
+.copy-message {
+    color: var(--cor-buttom-principal);
+    text-align: center;
+  }
+
+
+@media(max-width: 1170px) {
+ 
+  
+    .imagem__texto{
+        display: none;
+    }
+
+}
+@media(max-width: 840px){
+
+    .caixa__texto{
+        margin-top: 10%;
+    }
+    .botao-principal {
+        width: 270px;
+        height: 62px;
+    }
+    .botao-secundario{
+        width: 270px;
+        height: 62px;
+    }
+    .imagem__texto{
+        display: none;
+    }
+
+}
+
+@media(max-width: 670px){
+
+ 
+    body{
+        height: auto;
+    }
+    .texto__decodificador{
+        height: auto;
+    }
+
+    .logo__alura{
+        justify-content: center;
+        
+    }
+    .caixa__texto{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .texto textarea{
+        width: 300px;
+        height: 300px;
+     }
+    .botao-principal {
+        width: 175px;
+        height: 55px;
+    }
+    .botao-secundario{
+        width: 175px;
+        height: 55px;
+    }
+
+    .botoes{
+        justify-content: center;
+    }
+
+    @media(max-width: 280px){
+        .botao-principal {
+            width: 115px;
+            height: 50px;
+        }
+        .botao-secundario{
+            width: 115px;
+            height: 50px;
+        }
+        .texto textarea{
+            width: 180px;
+            height: 230px;
+         }
+    }
+
+}
