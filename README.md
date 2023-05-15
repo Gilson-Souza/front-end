@@ -36,23 +36,26 @@ O Trello é uma ferramenta de uso individual para você controlar o andamento da
 
 Bom projeto!
 
-Projeto foi realizado utilizando html, css e javaScript.
+Considerações sobre o projeto:
 
-O projeto conta com um 
-* logo alura
-* caixa de texto de area 
+Este projeto foi desenvolvido utilizando as linguagens de marcação HTML, de estilo CSS e de programação JavaScript. Ele apresenta vários elementos de interface, incluindo:
+
+* uma logo Alura
+* uma caixa de texto de área
 * dois botões para criptografar e descriptografar
 * uma imagem de um investigador com lupa
-* um texto no rodape
-* dois botões extra com links para o meu linkedin pessoal e para o repositorio online no gitHub
-* um botão para copiar que aparece apenas quando tiver texto digitado na tela   
+* um texto no rodapé
+* dois botões extras com links para o seu perfil pessoal do LinkedIn e para o repositório online no GitHub
+* Além disso, ele conta com um botão para copiar o texto criptografado ou descriptografado para a área de transferencia que aparece apenas quando há texto digitado na tela.
 
-Elementos da pagina posicionados com flex-box.
+Os elementos da página foram posicionados utilizando a técnica de Flexbox, que permite uma disposição mais flexível e dinâmica dos elementos em relação ao layout da página.
 
-Codigo de javaScript em dois formatos de logica, utilizando (for) criando um novo texto ao mesmo tempo que iterava e verificava os elementos do texto digitado, fazendo comparações para adicionar ao novo texto o elemento do texto digitado ou em caso de ser um dos elementos chave da criptografia eu adicionei ao texto o elemento de substituição no caso do [e] seria o [enter].
+Para implementar a funcionalidade de criptografia e descriptografia, foram utilizadas duas abordagens diferentes em JavaScript:
 
-E o segundo modelo de logica utilizado, foi com a function replace que realiza a substituição de forma mais simples e automatica identificando no texto os elementos chave e substituindo pelos elementos de substituição e entregando esse resultado em uma nova string.
+Na primeira abordagem, foi utilizado um loop for para iterar através dos elementos do texto digitado e comparar cada um deles com os elementos-chave da criptografia. Quando um elemento-chave é encontrado, o script adiciona o elemento de substituição ao novo texto criptografado ou descriptografado.
 
-Para os requisitos foi utlizado a estratégia de mudar o texto digitado para letras miniscula por meio de function, e usar uma outra function para retirar os acentos do texto digitado assim não precisando se preocupar com o conteudo digitado, ele sera tratado e enviado um texto que atende aos requisitos.
+Na segunda abordagem, foi utilizada a função replace do JavaScript, que substitui automaticamente os elementos-chave da criptografia pelos elementos de substituição. Essa abordagem é mais simples e automática, mas pode ser menos flexível em relação a alguns requisitos específicos.
 
-Foi adicionado um pequeno efeito no botão copiar, aparecendo apenas quando tem texto digitado na tela e quando clicado aparecendo na tela por alguns momentos "uma mensagem" , para isso foi utlizado o css e javaScrpt. 
+Para atender aos requisitos do projeto, foi utilizado um conjunto de funções para transformar o texto digitado em letras minúsculas e remover todos os acentos. Isso ajuda a simplificar o processamento do texto e garante que todos os caracteres sejam tratados de maneira uniforme.
+
+Por fim, um pequeno efeito foi adicionado ao botão de copiar, que aparece e desaparece na tela de acordo com a presença de texto digitado. Quando clicado, ele exibe uma mensagem na tela por alguns momentos para indicar que o texto foi copiado com sucesso. Esse efeito foi implementado utilizando as linguagens de estilo CSS e programação JavaScript.
