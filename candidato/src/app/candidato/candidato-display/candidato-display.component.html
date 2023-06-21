@@ -1,0 +1,79 @@
+
+ <div *ngIf="candidatos$ | async as candidatos">
+
+
+<div class="centered-list">
+  <mat-card class="card">
+    <mat-card-content>
+      <mat-card>
+        <mat-card-content>
+          <mat-toolbar color="primary" class="cabecalho" >
+            <h2>{{ candidatos.nome }}</h2>
+            <button mat-icon-button color="#FFFFFF" aria-label="Voltar para a página inicial" (click)="home()">
+              <mat-icon class="icone-voltar">home</mat-icon>
+            </button>
+          </mat-toolbar>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-content>
+          <p>Filiação:</p>
+          <ul>
+            <li>Nome do Pai: {{ candidatos.filiacao.nomePai }}</li>
+            <li>Nome da Mãe: {{ candidatos.filiacao.nomeMae }}</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-content>
+          <p>Endereço:</p>
+          <ul>
+            <li>Logradouro: {{ candidatos.endereco.logradouro }}</li>
+            <li>CEP: {{ candidatos.endereco.cep }}</li>
+            <li>Número: {{ candidatos.endereco.numero }}</li>
+            <li>Cidade: {{ candidatos.endereco.cidade.nome }}</li>
+            <li>Estado: {{ candidatos.endereco.cidade.estado.nome }}</li>
+            <li>Sigla do Estado: {{ candidatos.endereco.cidade.estado.sigla }}</li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-content>
+          <p>Telefones:</p>
+          <ul>
+            <li *ngFor="let telefone of candidatos.telefones">
+              Número: {{ telefone.numero }}, Tipo: {{ telefone.tipo | tipo}}
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card>
+        <mat-card-content>
+          <p>Cursos:</p>
+          <ul>
+            <li *ngFor="let curso of candidatos.cursos">
+              Nome do Curso: {{ curso.nome }}
+            </li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </mat-card-content>
+    <mat-card-actions class="button-container">
+      <button mat-raised-button color="primary" (click)="navigateToEdit()">Editar</button>
+      <button mat-raised-button color="warn" (click)="excluir(candidatos.id)">Excluir</button>
+    </mat-card-actions>
+
+
+  </mat-card>
+</div>
+
+
+
+</div>
+
+
+
+

@@ -1,0 +1,122 @@
+[
+  {
+    "nome": "Maria Oliveira",
+    "filiacao": {
+      "nomePai": "José Oliveira",
+      "nomeMae": "Ana Oliveira"
+    },
+    "endereco": {
+      "logradouro": "Avenida B",
+      "cep": "98765-432",
+      "numero": "60",
+      "cidade": {
+        "nome": "Rio de Janeiro",
+        "estado": {
+          "nome": "Rio de Janeiro",
+          "sigla": "RJ"
+        }
+      }
+    },
+    "telefones": [
+      {
+        "numero": "47654321",
+        "tipo": 1
+      },
+      {
+        "numero": "999999999",
+        "tipo": 3
+      }
+    ],
+    "cursos": [
+      {
+        "nome": "Administração",
+        "descricao": "Curso de Administração"
+      },
+      {
+        "nome": "Marketing",
+        "descricao": "Curso de Marketing"
+      }
+    ],
+    "dataCadastro": "2023-05-23T08:15:00"
+  },
+
+
+
+  {
+    "nome": "Joelma Berdinazzi",
+    "filiacao": {
+      "nomePai": "Maledeto Berdinazzi",
+      "nomeMae": "Ana Oliveira Berdinazzi"
+    },
+    "endereco": {
+      "logradouro": "Estrada Boi Bumba",
+      "cep": "08765-252",
+      "numero": "250",
+      "cidade": {
+        "nome": "São Paulo",
+        "estado": {
+          "nome": "Suzano",
+          "sigla": "SP"
+        }
+      }
+    },
+    "telefones": [
+      {
+        "numero": "980809932",
+        "tipo": 3
+      },
+      {
+        "numero": "999955999",
+        "tipo": 1
+      }
+    ],
+    "cursos": [
+      {
+        "nome": "Vendas"
+      },
+      {
+        "nome": "Modelagem"
+      }
+    ],
+    "dataCadastro": "2023-05-23T08:18:00"
+  },
+
+
+
+  {
+  "nome": "Gilson Crisostemo",
+  "filiacao": {
+    "nomePai": "Paulo Crisostomo",
+    "nomeMae": "Luzia Evangelista"
+  },
+  "endereco": {
+    "logradouro": "Rua Galileia, Quadra 6",
+    "cep": "09132-060",
+    "numero": "32",
+    "cidade": {
+      "nome": "Santo Andre",
+      "estado": {
+        "nome": "Sao Paulo",
+        "sigla": "SP"
+      }
+    }
+  },
+  "telefones": [
+    {
+      "numero": "46396310",
+      "tipo": 1
+    },
+  {
+      "numero": "947799976",
+      "tipo": 3
+    }
+  ],
+  "cursos": [
+    {
+      "nome": "Java"
+    }
+  ],
+  "dataCadastro": "2023-06-06T13:11:41.747Z"
+}
+
+]

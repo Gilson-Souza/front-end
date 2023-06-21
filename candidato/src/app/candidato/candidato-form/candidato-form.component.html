@@ -1,0 +1,171 @@
+<mat-card>
+  <mat-card class="botao__home">
+
+    <mat-card-header>
+      <mat-card-title>Formulario de Cadastro</mat-card-title>
+    </mat-card-header>
+    <div >
+      <button mat-mini-fab color="primary" aria-label="Voltar para a página inicial" (click)="home()">
+        <mat-icon class="icone-voltar">home</mat-icon>
+      </button>
+    </div>
+  </mat-card>
+
+
+  <mat-card-content>
+  <form [formGroup]="meuFormulario"  class="example-form">
+
+
+<mat-card>
+  <mat-card-title>Candidato</mat-card-title>
+  <div class="candidato">
+    <mat-form-field class="item__candidato">
+      <mat-label> Candidato *</mat-label>
+      <input matInput placeholder="Nome do Candidato*" formControlName="Nome">
+    </mat-form-field>
+  </div>
+</mat-card>
+
+  <mat-card>
+    <h2>Filiação</h2>
+    <div formGroupName="Filiacao" class="filiacao">
+        <mat-form-field class="item__filiacao">
+          <mat-label> Pai </mat-label>
+          <input matInput placeholder="Nome do Pai" formControlName="NomePai">
+        </mat-form-field>
+
+        <mat-form-field class="item__filiacao">
+          <mat-label> Mãe *</mat-label>
+          <input matInput placeholder="Nome do Mae*" formControlName="NomeMae">
+        </mat-form-field>
+      </div>
+  </mat-card>
+
+    <mat-card>
+        <h2>Endereço</h2>
+        <div class="endereco">
+          <div formGroupName="Endereco">
+            <div class="itens">
+              <mat-form-field>
+                <mat-label> Logradouro *</mat-label>
+                <input matInput placeholder="rua..estrada ou avenida" formControlName="Logradouro">
+              </mat-form-field>
+            </div>
+
+            <div class="itens">
+              <mat-form-field class="Numero">
+                <mat-label> Número *</mat-label>
+                <input matInput placeholder="Numero endereco" formControlName="Numero">
+              </mat-form-field>
+            </div>
+
+            <div class="itens">
+              <mat-form-field>
+                <mat-label> Cep *</mat-label>
+                <input matInput placeholder="Cep endereco" formControlName="Cep">
+              </mat-form-field>
+            </div>
+
+
+
+
+            <div formGroupName="Cidade" class="endereco_sec">
+                <div class="itens">
+                  <mat-form-field>
+                    <mat-label> Cidade *</mat-label>
+                    <input matInput placeholder="Cidade" formControlName="Nome">
+                  </mat-form-field>
+                </div>
+
+                <div formGroupName="Estado">
+                  <div class="itens">
+                    <mat-form-field>
+                    <mat-label> Estado *</mat-label>
+                    <input matInput placeholder="Estado" formControlName="Nome">
+                  </mat-form-field>
+                </div>
+
+                <div class="itens">
+                    <mat-form-field>
+                    <mat-label> Sigla *</mat-label>
+                    <input matInput placeholder="Sigla" formControlName="Sigla">
+                    </mat-form-field>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </mat-card>
+
+
+      <mat-card>
+        <div class="telefones">
+          <h2>Telefones</h2>
+          <div >
+          <ng-container formArrayName="Telefones" >
+            <ng-container *ngFor="let phoneForm of telefones.controls; let i = index">
+              <div class="phone-form-row" [formGroupName]="i">
+                <mat-form-field appearance="fill" class="telefone">
+                  <input matInput formControlName="Numero" placeholder="numero telefone">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="tipo">
+                  <mat-select formControlName="Tipo" placeholder="tipo telefone">
+                    <mat-option [value]="1">Residencial</mat-option>
+                    <mat-option [value]="2">Celular</mat-option>
+                    <mat-option [value]="3">Contato</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-icon class="delete-btn" (click)="deletePhone(i)">
+                  delete_forever</mat-icon>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+          <div>
+            <button mat-mini-fab (click)="addPhone()" color="primary">
+              <mat-icon class="add-course-btn">add</mat-icon>
+            </button>
+          </div>
+        </div>
+      </mat-card>
+
+      <mat-card>
+        <div class="cursos">
+
+          <h2>Cursos</h2>
+          <div>
+          <ng-container formArrayName="Cursos" >
+            <ng-container *ngFor="let courseForm of cursos.controls; let i = index">
+              <div class="course-form-row" [formGroupName]="i">
+
+                <mat-form-field appearance="fill" class="curso">
+                  <mat-select formControlName="Nome" placeholder="Escolha um curso">
+                    <mat-option value="Java">Java</mat-option>
+                    <mat-option value="Angular">Angular</mat-option>
+                    <mat-option value="C-Sharp">C-Sharp</mat-option>
+                    <mat-option value="React-JS">React-JS</mat-option>
+                    <mat-option value="HTML-&-CSS">HTML-&-CSS</mat-option>
+                    <mat-option value="Desing Pattern">Desing Pattern</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <mat-icon class="delete-btn" (click)="deleteCourse(i)">
+                  delete_forever</mat-icon>
+                </div>
+              </ng-container>
+            </ng-container>
+          </div>
+          <div>
+            <button mat-mini-fab (click)="addCourse()" color="primary">
+              <mat-icon class="add-course-btn">add</mat-icon>
+            </button>
+          </div>
+        </div>
+        </mat-card>
+        <button type="submit" mat-raised-button color="primary" (click)="enviarFormulario()">Salvar</button>
+
+    </form>
+    </mat-card-content>
+  </mat-card>

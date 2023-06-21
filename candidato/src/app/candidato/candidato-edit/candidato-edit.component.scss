@@ -1,0 +1,93 @@
+.example-form {
+  min-width: 150px;
+  max-width: 850px;
+  padding: auto;
+  width: 90%;
+  margin: auto;
+}
+
+td {
+  padding-right: 8px;
+}
+
+.mat-form-field
+{
+  padding: auto;
+}
+
+mat-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.botao__home{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 50px;
+}
+
+.candidato
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 3% ;
+  width: 100%;
+}
+.item__candidato{
+    width: 60%;
+}
+
+.filiacao{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 98%;
+}
+.item__filiacao{
+  width: 46%;
+  padding: 10px;
+}
+
+.endereco div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.endereco_sec{
+  display: flex;
+  justify-content: space-around;
+}
+.itens{
+  margin: 0 20px;
+}
+
+.telefones{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.tipo{
+  padding: 8px;
+}
+
+.cursos{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}

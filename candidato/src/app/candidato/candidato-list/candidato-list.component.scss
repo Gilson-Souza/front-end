@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.loading-spinner{
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__cont{
+  display: flex;
+  flex-direction: column;
+}
+
